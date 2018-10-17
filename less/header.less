@@ -1,0 +1,26 @@
+.header {
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+
+  &__brand {
+    text-decoration: none;
+    color: inherit;
+
+    &-title {
+      color: black;
+      transition: all 0.3s 0.15s; /// second sets a delay
+    }
+    &-author {
+      color: #bdbdbd;
+      transition: all 0.3s;
+    }
+    &:hover {
+      .header__brand-title,
+      .header__brand-author {
+        color: #ee6787; //needs to be targeted otherwise
+        //your targeting div and more specific tag  overriding
+      }
+    }
+  }
+}
