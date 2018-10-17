@@ -1,0 +1,43 @@
+.cta {
+  padding: 8rem 3rem;
+  background-image: linear-gradient(
+      to right,
+      rgba(rgb(154, 161, 186), 0.75),
+      rgba(rgb(154, 161, 186), 0.75)
+    ),
+    url(../assets/cta-bg.jpg);
+  .background-center();
+  color: white;
+  text-align: center;
+  &__box {
+    padding: 5rem;
+    background-image: linear-gradient(
+      to right,
+      rgba(238, 103, 134, 0.85),
+      rgba(245, 148, 96, 0.85)
+    );
+    max-width: 50rem; // will adjust to less than 50 rem so we use max-width
+    margin: 0 auto;
+    border-radius: 1rem;
+  }
+  &__heading {
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+  }
+  &__text {
+    margin-bottom: 2rem;
+  }
+  &__button {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.8rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    display: inline-block; // used to keep vertical padding and margin from collapsing between two inline ele.
+    transition: all 0.3s;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
