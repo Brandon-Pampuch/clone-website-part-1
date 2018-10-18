@@ -17,6 +17,8 @@ body {
   padding: 8rem 3rem;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
+  color: #444;
+  line-height: 1.5;
 }
 .container {
   width: 100%;
@@ -24,6 +26,17 @@ body {
   margin: 0 auto;
   background-color: white;
   border-radius: 10px;
+}
+.secondary-heading {
+  font-size: 2.6rem;
+  color: #ee6787;
+  margin-bottom: 2rem;
+}
+.text {
+  max-width: 45rem;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
 }
 .background-center {
   background-position: 50% 50%;
@@ -102,4 +115,43 @@ body {
 }
 .cta__button:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+.features {
+  padding: 8rem 3rem;
+  text-align: center;
+}
+.features__boxes {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.features__boxes::after {
+  content: "";
+  width: 60%;
+  height: 2px;
+  top: 4.9rem;
+  background-color: #ddd;
+  position: absolute;
+}
+.features__box {
+  z-index: 3;
+  background-color: white;
+}
+.features__box:not(:last-child) {
+  margin-right: 8%;
+}
+.features__box-icon {
+  font-size: 4rem;
+  color: #ee6787;
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #eee;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+.features__box-caption {
+  font-size: 2rem;
 }

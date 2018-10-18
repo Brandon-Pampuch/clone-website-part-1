@@ -1,0 +1,45 @@
+.features {
+  padding: 8rem 3rem;
+  text-align: center;
+  &__boxes {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &::after {
+      //mostly used to sufix like degree after temp creates div not touch html
+      content: "";
+      width: 60%; // used to shorten the line
+      height: 2px;
+      top: 4.9rem; // helps to position relative to containing parent (poition relative boxes)
+      background-color: #ddd;
+      position: absolute; // sends it to the block model https://developer.mozilla.org/en-US/docs/Web/CSS/position
+      //no parent has position so applies to window
+      //   z-index: -1; //default is set to 1 if both elements are 1 the ele rendered later is rendered on top ater appears after all so on top
+    }
+  }
+  &__box {
+    z-index: 3;
+    background-color: white; //color on background defaults to transparent can still see
+
+    &:not(:last-child) {
+      margin-right: 8%;
+    }
+    &-icon {
+      font-size: 4rem;
+      color: #ee6787;
+      width: 10rem;
+      height: 10rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; //affects the cross (not main) access of
+      border: 2px solid #eee;
+      border-radius: 50%;
+      margin-bottom: 2rem;
+    }
+
+    &-caption {
+      font-size: 2rem;
+    }
+  }
+}
