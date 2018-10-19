@@ -32,11 +32,19 @@ body {
   color: #ee6787;
   margin-bottom: 2rem;
 }
+.secondary-heading--white {
+  color: #fff;
+}
 .text {
   max-width: 45rem;
   margin: 0 auto;
   font-size: 1.8rem;
   margin-bottom: 3rem;
+}
+.text--white {
+  color: #fff;
+  margin-left: 0;
+  margin-right: 0;
 }
 .background-center {
   background-position: 50% 50%;
@@ -105,7 +113,7 @@ body {
 }
 .cta__button {
   text-decoration: none;
-  color: inherit;
+  color: white;
   font-size: 1.8rem;
   border: 2px solid white;
   border-radius: 5px;
@@ -154,4 +162,21 @@ body {
 }
 .features__box-caption {
   font-size: 2rem;
+}
+.middle-hero {
+  display: flex;
+}
+.middle-hero__left,
+.middle-hero__right {
+  width: 50%;
+}
+.middle-hero__left {
+  padding: 5rem;
+  background-image: linear-gradient(to right, #ee6786, #f59460);
+}
+.middle-hero__right {
+  background-image: linear-gradient(to right, rgba(154, 161, 186, 0.75), rgba(154, 161, 186, 0.75)), url(../assets/middle-hero.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
