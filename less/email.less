@@ -1,0 +1,46 @@
+.email {
+  color: white;
+  padding: 8rem 3rem;
+  background-image: linear-gradient(
+    to right,
+    rgba(rgb(143, 128, 142), 0.75),
+    rgba(rgb(91, 99, 129), 0.75)
+  );
+  text-align: center;
+}
+.form {
+  max-width: 45rem;
+  margin: 0 auto;
+  display: flex;
+  &__input {
+    flex-grow: 1; ///what is this?
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    background-color: transparent;
+    border: 2px solid #eee; //if you match borders they will look like running together
+    padding: 1rem;
+    border-radius: 5px 0 0 5px; // top left clockwise
+    font-family: inherit;
+    font-weight: inherit;
+    font-family: inherit; // will default on inputs and buttons neet to inherit
+    caret-color: white;
+    &::placeholder {
+      color: #ddd;
+    }
+    &:focus {
+      outline: none; //disabled focus on input
+    }
+  }
+
+  &__button {
+    background-color: #fff;
+    border: 2px solid #fff; //if you match borders they will look like running together
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    color: #5a6284;
+    border-radius: 0 5px 5px 0;
+    font-family: inherit; // will default on inputs and buttons neet to inherit
+    font-weight: inherit;
+    cursor: pointer;
+  }
+}

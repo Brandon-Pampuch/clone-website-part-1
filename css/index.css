@@ -124,6 +124,10 @@ body {
 .cta__button:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
+.cta__button:hover--white {
+  background-color: white;
+  color: #eee;
+}
 .features {
   padding: 8rem 3rem;
   text-align: center;
@@ -215,4 +219,44 @@ body {
 .pagination__dots--selected {
   background-color: #ee6787;
   border-color: #ee6787;
+}
+.email {
+  color: white;
+  padding: 8rem 3rem;
+  background-image: linear-gradient(to right, rgba(143, 128, 142, 0.75), rgba(91, 99, 129, 0.75));
+  text-align: center;
+}
+.form {
+  max-width: 45rem;
+  margin: 0 auto;
+  display: flex;
+}
+.form__input {
+  flex-grow: 1;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  background-color: transparent;
+  border: 2px solid #eee;
+  padding: 1rem;
+  border-radius: 5px 0 0 5px;
+  font-weight: inherit;
+  font-family: inherit;
+  caret-color: white;
+}
+.form__input::placeholder {
+  color: #ddd;
+}
+.form__input:focus {
+  outline: none;
+}
+.form__button {
+  background-color: #fff;
+  border: 2px solid #fff;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  color: #5a6284;
+  border-radius: 0 5px 5px 0;
+  font-family: inherit;
+  font-weight: inherit;
+  cursor: pointer;
 }
