@@ -14,6 +14,7 @@ body {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   padding: 8rem 3rem;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
@@ -124,6 +125,9 @@ body {
 }
 .cta__button:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+.cta__button:hover--block {
+  display: block;
 }
 .cta__button:hover--white {
   background-color: white;
@@ -317,4 +321,34 @@ body {
 }
 .footer__social-link:hover {
   color: #ee6787;
+}
+.nav {
+  background-color: palevioletred;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 40rem;
+  padding: 4rem;
+  background-image: linear-gradient(to right, #ee6786, #f59460);
+}
+.nav__link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 1.5rem 0;
+  font-size: 1.8rem;
+}
+.nav__link:not(:last-child) {
+  border-bottom: 1px solid #fff;
+}
+.nav__links {
+  margin-bottom: 3rem;
+}
+.nav__close {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  font-size: 2rem;
+  color: #fff;
 }
