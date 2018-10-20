@@ -260,3 +260,40 @@ body {
   font-weight: inherit;
   cursor: pointer;
 }
+.contact {
+  padding: 8rem 3rem;
+  text-align: center;
+}
+.contact__cards {
+  display: flex;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.panel {
+  width: 33%;
+}
+.panel:not(:last-child) {
+  border-right: 1px solid #ddd;
+}
+.panel__icon {
+  font-size: 2.4rem;
+  color: #ee6787;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #eee;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+.panel__info {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s;
+}
+.panel__info:hover {
+  color: #ee6787;
+  border-bottom: 1px dashed #ee6787;
+}

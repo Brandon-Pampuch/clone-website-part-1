@@ -1,0 +1,39 @@
+.contact {
+  padding: 8rem 3rem;
+  text-align: center;
+
+  &__cards {
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+.panel {
+  width: 33%; // really important when items aren't lined up with flex
+
+  &:not(:last-child) {
+    border-right: 1px solid #ddd;
+  }
+  &__icon {
+    font-size: 2.4rem;
+    color: #ee6787;
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center; //affects the cross (not main) access of
+    border: 2px solid #eee;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+  }
+  &__info {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s;
+    &:hover {
+      color: #ee6787;
+      border-bottom: 1px dashed #ee6787;
+    }
+  }
+}
