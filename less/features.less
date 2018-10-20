@@ -3,13 +3,15 @@
   text-align: center;
   &__boxes {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    max-width: 60rem;
     position: relative;
+    margin: 0 auto;
 
     &::after {
       //mostly used to sufix like degree after temp creates div not touch html
       content: "";
-      width: 60%; // used to shorten the line
+      width: 100%; // used to shorten the line
       height: 2px;
       top: 4.9rem; // helps to position relative to containing parent (poition relative boxes)
       background-color: #ddd;
@@ -22,9 +24,6 @@
     z-index: 3;
     background-color: white; //color on background defaults to transparent can still see
 
-    &:not(:last-child) {
-      margin-right: 8%;
-    }
     &-icon {
       font-size: 4rem;
       color: #ee6787;
