@@ -6,6 +6,12 @@
   bottom: 0;
   width: 40rem;
   padding: 4rem;
+  transform: translateX(100%);
+  transition: all 0.5s;
+
+  &--open {
+    transform: translate(0%);
+  }
 
   background-image: linear-gradient(
     to right,
@@ -16,12 +22,15 @@
   &__link {
     display: block;
     text-decoration: none;
-    color: #fff;
+    color: #eee;
     padding: 1.5rem 0;
     font-size: 1.8rem;
-
+    transition: all 0.3s;
     &:not(:last-child) {
       border-bottom: 1px solid #fff;
+    }
+    &:hover {
+      color: #fff;
     }
   }
 
@@ -35,5 +44,6 @@
     right: 3rem;
     font-size: 2rem;
     color: #fff;
+    cursor: pointer;
   }
 }

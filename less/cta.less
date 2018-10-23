@@ -36,16 +36,21 @@
     padding: 1rem 2rem;
     display: inline-block; // used to keep vertical padding and margin from collapsing between two inline ele.
     transition: all 0.3s;
+    margin-bottom: 2rem;
+
     &:hover {
       background-color: rgba(255, 255, 255, 0.1);
+    }
+    &--block {
+      display: block;
+      text-align: center;
+    }
 
-      &--block {
-        display: block;
-      }
-
-      &--white {
+    &--white {
+      background-color: white;
+      color: #ee6787;
+      &:hover {
         background-color: white;
-        color: #eee;
       }
     }
   }
